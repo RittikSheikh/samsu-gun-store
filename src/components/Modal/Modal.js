@@ -3,7 +3,6 @@ import React from 'react';
 import './Modal.css';
 
 const Modal = ({gun,gunDetails}) => {
-    console.log(gun)
     return (
         <div>
 

@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 
 
-const Header = ({count}) => {
+const Header = ({count,price}) => {
     return (
         <div>
             <div className="navbar bg-base-100 shadow-lg lg:px-20">
@@ -20,7 +20,7 @@ const Header = ({count}) => {
       <div tabIndex={0} className="mt-3 card-compact dropdown-content mr-2 w-52 bg-base-100 shadow">
         <div className="card-body ">
           <span className="font-bold text-lg">{count}</span>
-          <span className="text-info">Subtotal: $999</span>
+          <span className="text-info">Subtotal: ${price}</span>
           <div className="card-actions">
             <button className="btn btn-primary btn-block">View cart</button>
           </div>

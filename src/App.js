@@ -6,6 +6,12 @@ import Header from './components/Header/Header';
 function App() {
 
   const [count,setCount] = useState(0)
+  const [price,setPrice] = useState(0);
+
+  const setPrices=(newPrice)=>{
+    const number = parseInt(newPrice);
+    setPrice(price+number);
+  }
 
   const increaseCount=()=>{
     setCount(count+1);
@@ -13,8 +19,8 @@ function App() {
 
   return (
     <div>
-      <Header count={count}/>
-      <AllGun count={increaseCount}/>
+      <Header count={count} price={price}/>
+      <AllGun count={increaseCount} price={setPrices}/>
     </div>
   );
 }
